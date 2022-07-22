@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>İlk proje</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+
+    <script src="../model/Product.js"></script>
+    <script src="../model/obj.js"></script>
+    <script src="../controller/controller.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <h1> Data Silme Sıralama ve Düzenleme İşlemleri</h1>
+        <div class="row">
+            <!-- <form> -->
+            <div class="col-md-6">
+                <form name="myform" class="form-group">
+                    <input type="text" class="form-control" placeholder="Ürün Girin" id="box_1">
+                    <br>
+                    <input type="number" class="form-control" placeholder="Ürün Fiyatı Girin" id="box_2">
+                    <br>
+                    <textarea id="box_3" class="form-control" placeholder="konu ekle" cols="30" rows="10"></textarea>
+                    <br>
+                </form>
+                <div class="buttons">
+                    <button id="add" class="btn btn-primary">Ekle</button>
+                    <button id="delete" class="btn btn-danger">Sil</button>
+                    <button id="update" class="btn btn-secondary">Güncelle</button>
+                    <button id="save" class="btn btn-success">Kaydet</button>
+                    <button id="sort" class="btn btn-warning">Ürün Fiyatına' göre Sırala </button>
+                </div>
+            </div>
+           <!-- </form> -->
+            <div class="col-md-6 products">
+                <ul id="itemList">
+                    <!-- <li id="itemList"></li>  -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
